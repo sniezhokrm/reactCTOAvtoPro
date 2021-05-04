@@ -45,7 +45,7 @@ onToggleListService(e) {
         <li onClick={this.onToggleListService}><a href="">Автосервіс </a>
       <ListAvtoService listVisibleService={this.state.listVisibleService}/></li>
         <li onClick={this.onToggleListWork}><a href="">Кузовні роботи</a>
-      <ListAvtoWork listVisibleWork={this.state.listVisibleWork}/></li>
+        <ListAvtoWork listVisibleWork={this.state.listVisibleWork}/></li>
         <li><a href="">Ціни</a></li>
         <li><a href="">Інше</a></li>
         <li><a href="">Відгуки</a></li>
