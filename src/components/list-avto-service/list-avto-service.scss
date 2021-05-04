@@ -18,7 +18,7 @@
   height: 2px;
 }
 .visible {
+  transition: display .8s;
   display: block;
   position: absolute;
-  transition: all 1s;
 }

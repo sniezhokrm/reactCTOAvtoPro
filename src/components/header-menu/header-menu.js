@@ -9,6 +9,7 @@ export default class HeaderMenu extends Component {
     super(props);
         this.onToggleListService = this.onToggleListService.bind(this);
         this.onToggleListWork = this.onToggleListWork.bind(this);
+        this.onToggleLeave = this.onToggleLeave.bind(this);
         this.state = {
           listVisibleService: false,
           listVisibleWork: false
@@ -32,6 +33,14 @@ onToggleListService(e) {
     }
     })
     }
+  onToggleLeave() {
+      this.setState(({listVisibleWork,listVisibleService}) => {
+      return {
+        listVisibleWork: false,
+        listVisibleService: false
+      }
+      })
+      }
   render() {
 
   return (
@@ -42,9 +51,9 @@ onToggleListService(e) {
     <img  className='logo-img' src={avtopro_logo} alt=""/>
         <li><a href="#">Про нас  </a>
         </li>
-        <li onClick={this.onToggleListService}><a href="">Автосервіс </a>
+        <li onMouseLeave={this.onToggleLeave} onClick={this.onToggleListService}><a href="">Автосервіс </a>
       <ListAvtoService listVisibleService={this.state.listVisibleService}/></li>
-        <li onClick={this.onToggleListWork}><a href="">Кузовні роботи</a>
+        <li onClick={this.onToggleListWork} onMouseLeave={this.onToggleLeave} ><a href="">Кузовні роботи</a>
         <ListAvtoWork listVisibleWork={this.state.listVisibleWork}/></li>
         <li><a href="">Ціни</a></li>
         <li><a href="">Інше</a></li>
