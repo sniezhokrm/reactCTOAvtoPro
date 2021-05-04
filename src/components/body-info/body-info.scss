@@ -34,6 +34,10 @@
       text-indent: 15px;
       text-align: justify;
     }
+    a {
+      color: #fff !important;
+      text-decoration: noneж
+    }
   }
   &__details {
     position: absolute;
@@ -51,7 +55,6 @@
   }
   .visible_details {
     margin-top: 80px;
-    transform: .8s all;
     bottom: 40px;
   }
   .visible_effects {

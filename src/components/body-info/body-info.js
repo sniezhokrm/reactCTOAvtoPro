@@ -36,7 +36,6 @@ export default class BodyInfo extends Component {
            classNames +=' visible_details';
            classNamesItemInfo += ' visible_effects';
          }
-         console.log(item);
         if(typeof(item) === 'object'){
           return (
             <div onMouseEnter={() =>this.onToggleInfo(id)}
@@ -44,9 +43,9 @@ export default class BodyInfo extends Component {
               <img src={posts[+(id)- 1].iconInfo} alt="" class="info__img"/>
               <div class="info__desc">
                 <h4>Подзвоніть</h4>
-                  <p>{posts[+(id)- 1].text}</p>
+                <p>{posts[+(id)- 1].text}</p>
               </div>
-              <div class={classNames}>Детальніше</div>
+              <a href="#"><div class={classNames}>Детальніше</div></a>
             </div>
           )
         }
