@@ -1,0 +1,54 @@
+.about {
+  padding: 60px 0;
+  &__items {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  &__line {
+    display: block;
+    background-color: blue;
+    width: 100%;
+    height: 2px;
+  }
+  &__text {
+    width: 49%;
+    h3 {
+      letter-spacing: 4px;
+      font-size: 36px;
+    }
+    span {
+      color: blue;
+    }
+    p {
+      padding-top: 20px;
+      text-indent: 20px;
+      width: 100%;
+      font-size: 17px;
+      text-align: justify;
+    }
+  }
+  &__picture {
+    position: relative;
+    width: 49%;
+    img {
+      width: 100%;
+    }
+    &_bestchoose {
+      min-height: 30px;
+      width: 98%;
+      background-color: blue;
+      color: #fff;
+      text-align: center;
+      font-style: italic;
+      font-size: 16;
+      z-index: 100px;
+      position: absolute;
+      left: 5px;
+      bottom: 20px;
+
+    }
+  }
+}
