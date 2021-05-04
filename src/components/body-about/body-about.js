@@ -1,6 +1,5 @@
 import React from 'react';
 import './body-about.scss';
-import AboutPicture from '../image/about_avtomehanik.jpg'
 
 const BodyAbout = () => {
   return (
@@ -17,7 +16,7 @@ const BodyAbout = () => {
              Ви будете задоволенні якістю ремонту та обслуговування.</p>
           </div>
           <div className="about__picture">
-            <img src={AboutPicture} alt=""/>
+            <img src="/images/about_avtomehanik.jpg" alt=""/>
             <div className="about__picture_bestchoose">СТО "AVTORPO" кращий вибір для Вашого автомобіля</div>
           </div>
         </div>

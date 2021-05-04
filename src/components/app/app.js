@@ -12,15 +12,9 @@ export default class App extends Component {
         this.state = {
           activeInfo: false
         }
-        this.onToggleInfo = this.onToggleInfo.bind(this);
+
     }
-  onToggleInfo(active) {
-    this.setState(({activeInfo}) => {
-    return {
-      activeInfo: active
-    }
-    })
-    }
+
   render() {
     return (
     <div>

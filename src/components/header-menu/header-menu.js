@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './header-menu.scss';
-import avtopro_logo from '../image/avtopro_logo.png'
 import ListAvtoService from '../list-avto-service/list-avto-service';
 import ListAvtoWork from '../list-avto-work/list-avto-work';
 
@@ -48,7 +47,7 @@ onToggleListService(e) {
   <div className="app-menu">
     <div className='container'>
   <ul className="app-list">
-    <img  className='logo-img' src={avtopro_logo} alt=""/>
+    <img  className='logo-img' src="/images/avtopro_logo.png" alt=""/>
         <li><a href="#">Про нас  </a>
         </li>
         <li onMouseLeave={this.onToggleLeave} onClick={this.onToggleListService}><a href="">Автосервіс </a>
