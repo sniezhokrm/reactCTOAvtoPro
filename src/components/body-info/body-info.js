@@ -6,9 +6,12 @@ export default class BodyInfo extends Component {
     super(props);
   this.state = {
       posts : [
-      {iconInfo: '/images/icons1.png', id: '1', active: false, text: "Досвідченні механіки завжди дадуть відповідь на Ваше запитання. Даєм детальний опис об'єму вартості робіт Вашого автомобіля"},
-      {iconInfo: '/images/icons2.png', id: '2', active: false, text: "Mи завжди раді співправці з Вами, подзвоніть та запишіться в зручний для Вас час"},
-      {iconInfo: '/images/icons3.png', id: '3', active: false, text: "Ми якісно відремонтуємо Ваш автомобіль, завжди будемо тримати Вас у курсі подій та форсмажорних обставин"},
+      {iconInfo: '/images/icons1.png', id: '1', active: false, textTitle: "Подзвоніть",
+        text: "Досвідченні механіки завжди дадуть відповідь на Ваше запитання. Даєм детальний опис об'єму вартості робіт Вашого автомобіля"},
+      {iconInfo: '/images/icons2.png', id: '2', active: false, textTitle: "Запишіться",
+        text: "Mи завжди раді співправці з Вами, подзвоніть та запишіться в зручний для Вас час"},
+      {iconInfo: '/images/icons3.png', id: '3', active: false, textTitle: "Відремонтуйте",
+        text: "Ми якісно відремонтуємо Ваш автомобіль, завжди будемо тримати Вас у курсі подій та форсмажорних обставин"},
     ],
     }
     this.onToggleInfo= this.onToggleInfo.bind(this);
@@ -42,7 +45,7 @@ export default class BodyInfo extends Component {
             onMouseLeave={() => this.onToggleInfo(id)} class={classNamesItemInfo} id={id}>
               <img src={posts[+(id)- 1].iconInfo} alt="" class="info__img"/>
               <div class="info__desc">
-                <h4>Подзвоніть</h4>
+                <h4>{posts[+(id)- 1].textTitle}</h4>
                 <p>{posts[+(id)- 1].text}</p>
               </div>
               <a href="#"><div class={classNames}>Детальніше</div></a>

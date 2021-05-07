@@ -5,13 +5,14 @@ import './body-carusel.scss';
 import { Carousel } from 'react-responsive-carousel';
 
 class BodyCarusel extends Component {
+
     render() {
         return (
           <div className='carusel'>
             <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} showArrows={true} interval={8000} >
                 <div>
                     <img src="images/carusel1.jpg" />
-                    <h1>CTO "AVTOPRO" ремонт автомобілів<br/> в Тернополі</h1>
+                    <h1 >CTO "AVTOPRO" ремонт автомобілів<br/> в Тернополі</h1>
                     <p className="legend">ПРО НАС</p>
                     <div className='carusel__contacts'>
                       <p>Потрібна допомога? Наберіть нам.</p>
@@ -29,8 +30,8 @@ class BodyCarusel extends Component {
                 </div>
                 <div>
                     <img src="images/carusel3.jpg" />
-                    <h1>Підір запчастин по низьких <br/> цінах</h1>
-                    <p className="legend">Детальніше</p>
+                    <h1>Підбір запчастин по низьких <br/> цінах</h1>
+                    <p className="legend" >Детальніше</p>
                     <div className='carusel__contacts'>
                       <p>Потрібна допомога? Наберіть нам.</p>
                       <a href="tel:380988360066">+380988360066</a>

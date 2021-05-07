@@ -47,7 +47,7 @@ onToggleListService(e) {
   <div className="app-menu">
     <div className='container'>
   <ul className="app-list">
-    <img  className='logo-img' src="/images/avtopro_logo.png" alt=""/>
+    <img  className='logo-img' src="/images/avtopro_logo_head.png" alt=""/>
         <li><a href="#">Про нас  </a>
         </li>
         <li onMouseLeave={this.onToggleLeave} onClick={this.onToggleListService}><a href="">Автосервіс </a>

@@ -9,8 +9,8 @@
   }
   &__line {
     display: block;
-    background-color: blue;
-    width: 100%;
+    background-color: var(--base-color);
+    width: 97%;
     height: 2px;
   }
   &__text {
@@ -20,7 +20,7 @@
       font-size: 36px;
     }
     span {
-      color: blue;
+      color: var(--base-color);
     }
     p {
       padding-top: 20px;
@@ -28,6 +28,8 @@
       width: 100%;
       font-size: 17px;
       text-align: justify;
+      color: var(--base-text-grey);
+      padding-right: 15px;
     }
   }
   &__picture {
@@ -39,7 +41,7 @@
     &_bestchoose {
       min-height: 30px;
       width: 98%;
-      background-color: blue;
+      background-color: var(--base-color);
       color: #fff;
       text-align: center;
       font-style: italic;
