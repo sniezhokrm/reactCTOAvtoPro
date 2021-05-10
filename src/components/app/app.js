@@ -7,9 +7,10 @@ import BodyAbout from '../body-about/body-about';
 import BodyInfo from '../body-info/body-info';
 import BodyServices from '../body-services/body-services';
 import BodyCarBrands from '../body-car-brands/body-car-brands';
-import Footer from '../footer/footer';
+import Footer from '../footer/footer'; 
 
 export default class App extends Component {
+
   constructor(props) {
     super(props);
         this.state = {

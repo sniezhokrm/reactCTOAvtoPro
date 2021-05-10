@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './body-services.scss';
+import ScrollAnimation from 'react-animate-on-scroll'
 
 export default class BodyServices extends Component {
   constructor(props) {
@@ -29,7 +30,9 @@ export default class BodyServices extends Component {
         if(typeof(item) === 'object'){
           return (
               <div className="servises__item">
-                <img src={postsServices[+(idServices)- 1].iconServices} alt="" class="servises__img"/>
+                <ScrollAnimation animateIn='slideInDown'>
+                <img src={postsServices[+(idServices)- 1].iconServices} alt=""
+                  class="servises__img wow"/> </ScrollAnimation>
                 <h5>{postsServices[+(idServices)- 1].textServicesTitle}</h5>
                 <p>{postsServices[+(idServices)- 1].textServices}</p>
               </div>

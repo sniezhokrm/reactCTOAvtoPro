@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ScrollAnimation from 'react-animate-on-scroll'
 import './body-car-brands.scss';
 
 export default class BodyCarBrands extends Component {
@@ -52,7 +53,10 @@ export default class BodyCarBrands extends Component {
         if(typeof(item) === 'object'){
           return (
               <div className="brands__item">
-                <img src={postsBrands[+(idBrands)- 1].iconBrands} alt="" class="brands__img"/>
+                <ScrollAnimation animateIn='pulse'>
+                <img src={postsBrands[+(idBrands)- 1].iconBrands} alt=""
+                  class="brands__img"/>
+              </ScrollAnimation>
               </div>
           )
         }

@@ -3,20 +3,23 @@ import { bounce } from 'react-animations'
 import Radium, {StyleRoot} from 'radium';
 import './body-about.scss';
 
+
 const styles = {
   bounce: {
     animation: 'x 1s',
     animationName: Radium.keyframes(bounce, 'bounce')
   }
 }
+
 const BodyAbout = () => {
   return (
-    <StyleRoot>
     <div className="about">
       <div className="container">
         <div className="about__items">
           <div className="about__text">
-            <h3 style={ styles.bounce }>Вітаємо на СТО <span>"AVTOPRO"</span></h3>
+            <StyleRoot style={styles.bounce}>
+              <h3 className="wow fadeIn" >Вітаємо на СТО <span>"AVTOPRO"</span></h3>
+            </StyleRoot>
             <div className="about__line"></div>
             <p>СТО "AVTORPO" була заснована в 2021 році. Вирішення проблем з автомобілями -
             це не тільки трудомісткий процес, но і часто розчаровуючий, ремонт обходиться
@@ -31,6 +34,5 @@ const BodyAbout = () => {
         </div>
       </div>
     </div>
-    </StyleRoot>
 )};
 export default BodyAbout;

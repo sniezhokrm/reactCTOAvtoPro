@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import './body-carusel.scss';
 import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import './body-carusel.scss';
+
 
 class BodyCarusel extends Component {
 
@@ -12,7 +13,7 @@ class BodyCarusel extends Component {
             <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} showArrows={true} interval={8000} >
                 <div>
                     <img src="images/carusel1.jpg" />
-                    <h1 >CTO "AVTOPRO" ремонт автомобілів<br/> в Тернополі</h1>
+                    <h1>CTO "AVTOPRO" ремонт автомобілів<br/> в Тернополі</h1>
                     <p className="legend">ПРО НАС</p>
                     <div className='carusel__contacts'>
                       <p>Потрібна допомога? Наберіть нам.</p>
@@ -21,7 +22,7 @@ class BodyCarusel extends Component {
                 </div>
                 <div>
                     <img src="images/carusel2.jpg" />
-                    <h1>Якіснa діагностика та ремонт <br/> автомбілів</h1>
+                      <h1>Якіснa діагностика та ремонт <br/> автомбілів</h1>
                     <p className="legend">Види робіт</p>
                     <div className='carusel__contacts'>
                       <p>Потрібна допомога? Наберіть нам.</p>
@@ -30,7 +31,7 @@ class BodyCarusel extends Component {
                 </div>
                 <div>
                     <img src="images/carusel3.jpg" />
-                    <h1>Підбір запчастин по низьких <br/> цінах</h1>
+                      <h1>Підбір запчастин по низьких <br/> цінах</h1>
                     <p className="legend" >Детальніше</p>
                     <div className='carusel__contacts'>
                       <p>Потрібна допомога? Наберіть нам.</p>

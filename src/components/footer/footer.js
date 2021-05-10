@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 import './footer.scss';
 
 export default class Footer extends Component {
@@ -12,8 +13,10 @@ return(
       <div className="container">
         <div className="footer__items">
           <div className="footer__item">
+            <ScrollAnimation animateIn='bounce'>
               <img src="/images/avtopro_logo.png" alt=""/>
-              <div className="footer__btn">Консультація</div>
+            </ScrollAnimation>
+              <a href="tel: +380988360066"><div className="footer__btn">Консультація</div></a>
           </div>
           <div className="footer__item">
             <h5>Автосервіс</h5>
@@ -40,7 +43,7 @@ return(
               <li><a href="mailto:sniezhokrm@gmail.com">sniezhokrm@gmail.com></a></li>
               <li>Україна, смт.В.Березовиця,<br/>вул.Микулинецька 41 </li>
               <li>Понеділок-Субота: 09:00-18:00</li>
-              <li>Неділя: Вихідний</li>
+              <li>Неділя:Вихідний</li>
             </ul>
           </div>
         </div>
