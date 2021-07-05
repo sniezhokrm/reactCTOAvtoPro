@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import './header-menu.scss';
-import ListAvtoService from '../list-avto-service/list-avto-service';
-import ListAvtoWork from '../list-avto-work/list-avto-work';
+import ListAvtoService from '../pages/main/list-avto-service/list-avto-service';
+import ListAvtoWork from '../pages/main/list-avto-work/list-avto-work';
+import {Link} from "react-router-dom";
 
 export default class HeaderMenu extends Component {
   constructor(props) {
@@ -44,22 +45,24 @@ onToggleListService(e) {
 
   return (
     <div className="menu">
-  <div className="app-menu">
-    <div className='container'>
-  <ul className="app-list">
-    <img  className='logo-img' src="/images/avtopro_logo_head.png" alt=""/>
-        <li><a href="#">Про нас</a>
-        </li>
-        <li onMouseLeave={this.onToggleLeave} onClick={this.onToggleListService}><a href="">Автосервіс </a>
-      <ListAvtoService listVisibleService={this.state.listVisibleService}/></li>
-        <li onClick={this.onToggleListWork} onMouseLeave={this.onToggleLeave} ><a href="">Кузовні роботи</a>
-        <ListAvtoWork listVisibleWork={this.state.listVisibleWork}/></li>
-        <li><a href="">Ціни</a></li>
-        <li><a href="">Інше</a></li>
-        <li><a href="">Відгуки</a></li>
-  </ul>
-</div>
-</div>
-</div>
-)}
+      <div className="app-menu">
+        <div className='container'>
+          <ul className="app-list">
+            <Link to="/"><img  className='logo-img' src="/images/avtopro_logo_head.png" alt=""/></Link>
+            <li><Link to="/about">Про нас</Link></li>
+            <li onMouseLeave={this.onToggleLeave} onClick={this.onToggleListService}>
+              <Link to="#">Автосервіс </Link>
+              <ListAvtoService listVisibleService={this.state.listVisibleService}/>
+            </li>
+            <li onClick={this.onToggleListWork} onMouseLeave={this.onToggleLeave} >
+              <Link to="#">Кузовні роботи</Link>
+          <ListAvtoWork listVisibleWork={this.state.listVisibleWork}/></li>
+            <li><Link to="#">Ціни</Link></li>
+            <li><Link to="#">Інше</Link></li>
+            <li><Link to="#">Відгуки</Link></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  )}
 };

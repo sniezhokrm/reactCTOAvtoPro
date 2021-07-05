@@ -1,14 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import './footer.scss';
 
-export default class Footer extends Component {
-  constructor(props) {
-    super(props);
-    }
-  render() {
+const Footer = () => {
 
-return(
+  return(
     <div className="footer">
       <div className="container">
         <div className="footer__items">
@@ -49,5 +45,6 @@ return(
         </div>
       </div>
     </div>
-  )}
-  };
+  )};
+
+  export default Footer;

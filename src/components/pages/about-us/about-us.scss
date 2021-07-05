@@ -1,0 +1,28 @@
+.aboutus {
+  margin: 30px auto;
+  min-height: 200px;
+  &__img {
+    display: block;
+    width: 50%;
+  }
+  &__block {
+    min-height: 100%;
+    border: 2px solid #000066;
+    border-radius: 5px;
+    background-color: var(--base-color);
+    color: white;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    margin-bottom: 40px;
+  }
+  &__text {
+    margin: 10px 10px;
+  }
+  h2 {
+  text-align: center;
+  }
+  &__desc {
+    text-indent: 20px;
+  }
+  }

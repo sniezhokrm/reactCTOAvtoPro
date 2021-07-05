@@ -49,7 +49,7 @@ export default class BodyCarBrands extends Component {
   render() {
   const {postsBrands} = this.state;
   const elementsBrands = postsBrands.map((item) => {
-    const {idBrands, ...itemProps} = item;
+    const {idBrands} = item;
         if(typeof(item) === 'object'){
           return (
               <div className="brands__item">

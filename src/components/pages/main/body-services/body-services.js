@@ -26,7 +26,7 @@ export default class BodyServices extends Component {
   render() {
   const {postsServices} = this.state;
   const elementsServices = postsServices.map((item) => {
-    const {idServices, ...itemProps} = item;
+    const {idServices} = item;
         if(typeof(item) === 'object'){
           return (
               <div className="servises__item">

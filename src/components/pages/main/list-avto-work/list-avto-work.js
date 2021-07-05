@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
+import {Link} from "react-router-dom";
 import './list-avto-work.scss';
 
 export default class ListAvtoWork extends Component {
-  constructor(props) {
-    super(props);
-    }
+
   render() {
     const {listVisibleWork} = this.props
     let classNames = 'list-internal';
@@ -14,11 +13,11 @@ export default class ListAvtoWork extends Component {
 return (
   <div className={classNames}>
     <div className='list-line'></div>
-    <li><a href="">Ремонт кузова</a></li>
-    <li><a href="">Поліровка кузова</a></li>
-    <li><a href="">Зварювальні роботи</a></li>
-    <li><a href="">Локальна підкраска</a></li>
-    <li><a href="">Заміна елементів кузова</a></li>
+    <li><Link to="/">Ремонт кузова</Link></li>
+    <li><Link to="/">Поліровка кузова</Link></li>
+    <li><Link to="/">Зварювальні роботи</Link></li>
+    <li><Link to="/">Локальна підкраска</Link></li>
+    <li><Link to="/">Заміна елементів кузова</Link></li>
   </div>
 )}
 };

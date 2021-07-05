@@ -1,16 +1,17 @@
 import React, {Component} from 'react';
 import './body-info.scss';
+import {Link} from "react-router-dom";
 
 export default class BodyInfo extends Component {
   constructor(props) {
     super(props);
   this.state = {
       posts : [
-      {iconInfo: '/images/icons1.png', id: '1', active: false, textTitle: "Подзвоніть",
+      {iconInfo: '/images/icons1.png', id: '11', active: false, textTitle: "Подзвоніть",
         text: "Досвідченні механіки завжди дадуть відповідь на Ваше запитання. Даєм детальний опис об'єму вартості робіт Вашого автомобіля"},
-      {iconInfo: '/images/icons2.png', id: '2', active: false, textTitle: "Запишіться",
+      {iconInfo: '/images/icons2.png', id: '12', active: false, textTitle: "Запишіться",
         text: "Mи завжди раді співправці з Вами, подзвоніть та запишіться в зручний для Вас час"},
-      {iconInfo: '/images/icons3.png', id: '3', active: false, textTitle: "Відремонтуйте",
+      {iconInfo: '/images/icons3.png', id: '13', active: false, textTitle: "Відремонтуйте",
         text: "Ми якісно відремонтуємо Ваш автомобіль, завжди будемо тримати Вас у курсі подій та форсмажорних обставин"},
     ],
     }
@@ -28,27 +29,25 @@ export default class BodyInfo extends Component {
         })
       }
   render() {
-    const {onToggleInfo, activeInfo} = this.props
     const {posts} = this.state;
-
-  const elements = posts.map((item) => {
-    const {id, ...itemProps} = item;
+    const elements = posts.map((item) => {
+    const {id} = item;
     let classNames = 'info__details',
         classNamesItemInfo = "info__items";
-      if (posts[+(id)- 1].active) {
+      if (posts[+(id)- 11].active) {
            classNames +=' visible_details';
            classNamesItemInfo += ' visible_effects';
          }
         if(typeof(item) === 'object'){
           return (
             <div onMouseEnter={() =>this.onToggleInfo(id)}
-            onMouseLeave={() => this.onToggleInfo(id)} class={classNamesItemInfo} id={id}>
-              <img src={posts[+(id)- 1].iconInfo} alt="" class="info__img"/>
-              <div class="info__desc">
-                <h4>{posts[+(id)- 1].textTitle}</h4>
-                <p>{posts[+(id)- 1].text}</p>
+            onMouseLeave={() => this.onToggleInfo(id)} className={classNamesItemInfo} id={id}>
+              <img src={posts[+(id)- 11].iconInfo} alt="" className="info__img"/>
+              <div className="info__desc">
+                <h4>{posts[+(id)- 11].textTitle}</h4>
+                <p>{posts[+(id)- 11].text}</p>
               </div>
-              <a href="#"><div class={classNames}>Детальніше</div></a>
+              <Link to="/"><div className={classNames}>Детальніше</div></Link>
             </div>
           )
         }

@@ -2,15 +2,20 @@ import React, {Component} from 'react';
 import './variables.scss';
 import './app.scss';
 import HeaderMenu from '../header-menu/header-menu';
-import BodyCarusel from '../body-carusel/body-carusel';
-import BodyAbout from '../body-about/body-about';
-import BodyInfo from '../body-info/body-info';
-import BodyServices from '../body-services/body-services';
-import BodyCarBrands from '../body-car-brands/body-car-brands';
-import Footer from '../footer/footer'; 
+import BodyCarusel from '../pages/main/body-carusel/body-carusel';
+import BodyAbout from '../pages/main/body-about/body-about';
+import BodyInfo from '../pages/main/body-info/body-info';
+import BodyServices from '../pages/main/body-services/body-services';
+import BodyCarBrands from '../pages/main/body-car-brands/body-car-brands';
+import Footer from '../footer/footer';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import AboutUs from '../pages/about-us/about-us';
 
 export default class App extends Component {
-
   constructor(props) {
     super(props);
         this.state = {
@@ -19,14 +24,23 @@ export default class App extends Component {
     }
   render() {
     return (
-    <div>
-        <HeaderMenu/>
+    <>
+    <Router>
+     <HeaderMenu/>
+     <Switch>
+       <Route path="/" exact>
         <BodyCarusel/>
         <BodyAbout/>
         <BodyInfo onToggleInfo={this.onToggleInfo} activeInfo={this.state.activeInfo}/>
         <BodyServices/>
         <BodyCarBrands/>
-        <Footer/>
-    </div>
+       </Route>
+       <Route path="/about">
+        <AboutUs/>
+      </Route>
+      </Switch>
+     <Footer/>
+    </Router>
+    </>
   )}
   };
