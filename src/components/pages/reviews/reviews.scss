@@ -1,0 +1,62 @@
+.reviews {
+  min-height: 360px;
+  padding: 40px 20px;
+
+  &__nameInp {
+    width: 300px;
+  }
+
+  &__stars {
+    padding-left: 10px;
+    width: 270px;
+  }
+
+  &__btn {
+    color: white;
+    background-color: var(--base-color);
+    border: 2px solid var(--base-color);
+
+    &:hover {
+      background-color: #000066;
+    }
+  }
+    &__nameInp {
+      color: #000066;
+      width: 240px;
+    }
+    &__textInp {
+      color: #000066;
+    }
+    &__items {
+      margin-top: 20px;
+      padding: 10px 10px;
+      width: 95%;
+      min-height: 100px;
+      color: white;
+      border-top-color: white;
+    }
+
+    &__text {
+      text-overflow: clip;
+    }
+    &__name {
+      font-size: 20px;
+      padding-left: 30px;
+    }
+    &__star {
+      display: block;
+      margin: 0px auto;
+    }
+    li {
+      padding-left: 26px;
+      margin-bottom: 10px;
+      list-style-type: none;
+      background-color: var(--base-color);
+      border: 2px solid white;
+      border-radius: 10px;
+    }
+}
+
+.react-stars-wrapper {
+  width: 500px;
+}

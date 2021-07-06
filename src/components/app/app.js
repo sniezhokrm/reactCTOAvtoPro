@@ -14,6 +14,7 @@ import {
   Route
 } from "react-router-dom";
 import AboutUs from '../pages/about-us/about-us';
+import Reviews from '../pages/reviews/reviews';
 
 export default class App extends Component {
   constructor(props) {
@@ -38,6 +39,9 @@ export default class App extends Component {
        <Route path="/about">
         <AboutUs/>
       </Route>
+      <Route path="/reviews">
+       <Reviews/>
+     </Route>
       </Switch>
      <Footer/>
     </Router>

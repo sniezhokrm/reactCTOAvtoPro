@@ -47,7 +47,7 @@ export default class BodyInfo extends Component {
                 <h4>{posts[+(id)- 11].textTitle}</h4>
                 <p>{posts[+(id)- 11].text}</p>
               </div>
-              <Link to="/"><div className={classNames}>Детальніше</div></Link>
+              <a href="/"><div className={classNames}>Детальніше</div></a>
             </div>
           )
         }

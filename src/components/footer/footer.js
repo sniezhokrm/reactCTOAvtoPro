@@ -1,6 +1,7 @@
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import './footer.scss';
+import {Link} from "react-router-dom";
 
 const Footer = () => {
 
@@ -12,7 +13,7 @@ const Footer = () => {
             <ScrollAnimation animateIn='bounce'>
               <img src="/images/avtopro_logo.png" alt=""/>
             </ScrollAnimation>
-              <a href="tel: +380988360066"><div className="footer__btn">Консультація</div></a>
+              <Link to="tel: +380988360066"><div className="footer__btn">Консультація</div></Link>
           </div>
           <div className="footer__item">
             <h5>Автосервіс</h5>

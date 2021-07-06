@@ -13,11 +13,11 @@ export default class ListAvtoService extends Component {
 return (
   <div className={classNames}>
     <div className='list-line'></div>
-    <li><Link to="/">Діагностика ходової</Link></li>
-    <li><Link to="/">Ремонт ходової</Link></li>
-    <li><Link to="/">Заміна масла</Link></li>
-    <li><Link to="/">Компютерна діагностика</Link></li>
-    <li><Link to="/">Ремонт двигуна та коробоки передач</Link></li>
+    <Link to="/"><li>Діагностика ходової</li></Link>
+    <Link to="/"><li>Ремонт ходової</li></Link>
+    <Link to="/"><li>Заміна масла</li></Link>
+    <Link to="/"><li>Компютерна діагностика</li></Link>
+    <Link to="/"><li>Ремонт двигуна та коробоки передач</li></Link>
   </div>
 )}
 };

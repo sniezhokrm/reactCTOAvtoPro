@@ -48,6 +48,7 @@
   "devDependencies": {
     "aphrodite": "^2.4.0",
     "react-animations": "^1.0.0",
+    "react-rating-stars-component": "^2.2.0",
     "react-router-dom": "^5.2.0"
   }
 }

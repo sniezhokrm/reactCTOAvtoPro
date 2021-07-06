@@ -49,17 +49,18 @@ onToggleListService(e) {
         <div className='container'>
           <ul className="app-list">
             <Link to="/"><img  className='logo-img' src="/images/avtopro_logo_head.png" alt=""/></Link>
-            <li><Link to="/about">Про нас</Link></li>
-            <li onMouseLeave={this.onToggleLeave} onClick={this.onToggleListService}>
-              <Link to="#">Автосервіс </Link>
+            <Link to="/about"><li>Про нас</li></Link>
+            <Link to="#"><li onMouseLeave={this.onToggleLeave} onClick={this.onToggleListService}>
+              Автосервіс
               <ListAvtoService listVisibleService={this.state.listVisibleService}/>
-            </li>
-            <li onClick={this.onToggleListWork} onMouseLeave={this.onToggleLeave} >
-              <Link to="#">Кузовні роботи</Link>
-          <ListAvtoWork listVisibleWork={this.state.listVisibleWork}/></li>
-            <li><Link to="#">Ціни</Link></li>
-            <li><Link to="#">Інше</Link></li>
-            <li><Link to="#">Відгуки</Link></li>
+            </li></Link>
+            <Link to="#"><li onClick={this.onToggleListWork} onMouseLeave={this.onToggleLeave} >
+              Кузовні роботи
+              <ListAvtoWork listVisibleWork={this.state.listVisibleWork}/>
+            </li></Link>
+            <Link to="#"><li>Ціни</li></Link>
+            <Link to="#"><li>Інше</li></Link>
+            <Link to="/reviews"><li>Відгуки</li></Link>
           </ul>
         </div>
       </div>
