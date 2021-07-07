@@ -16,7 +16,8 @@ export default class Reviews extends Component {
     ],
     text: '',
     name: '',
-    star: 5
+    star: 5,
+    prevent: false
     }
   this.onChange = this.onChange.bind(this);
   this.onSubmit = this.onSubmit.bind(this);
@@ -29,7 +30,7 @@ onChange(e) {
 }
 onChangeName(e) {
   this.setState({
-    name: e.target.value
+      name: e.target.value
   })
 }
 onChangeStar(value) {
@@ -45,7 +46,7 @@ onSubmit(e) {
     return {
       name: '',
       text: '',
-      star: 5
+      star: 5,
       }
     })
 }
@@ -56,22 +57,28 @@ addForm(name, text, star) {
     text,
     name,
     id: random,
-    star
+    star,
   }
   if (!(name ==="") && !(text==="") && star) {
-    this.setState(({reviews}) => {
+    this.setState(({reviews, prevent}) => {
     const newArr = [...reviews, newItem]
     return {
-      reviews: newArr
+      reviews: newArr,
+      prevent: false
+      }
+    })
+  } else {
+    this.setState(({revent}) => {
+    return {
+      prevent: true
       }
     })
   }
-
 }
 
 
   render() {
-    const {reviews} = this.state;
+    const {reviews, prevent} = this.state;
     const starPropsChoose = {
     size: 24,
     count: 5,
@@ -95,7 +102,7 @@ addForm(name, text, star) {
                 <div className='reviews__name'>{name}</div>
                 <div className='reviews__text'>{text}</div>
                 <ReactStars className='reviews__star'
-                  value={star}
+                  value= {star}
                 {...starPropsRender}
                 />
               </li>
@@ -103,9 +110,12 @@ addForm(name, text, star) {
         }
     });
 
+    const reventMassage = prevent ? "Заповніть, будь ласка, пусті поля!" : "";
+
 return(
   <div className="reviews">
     <div className="container">
+      <div className="reviews__prevent" >{reventMassage}</div>
       <form onSubmit={this.onSubmit}
         className = 'reviews__form bottom-panel d-flex'>
         <input value={this.state.name} onChange={this.onChangeName}

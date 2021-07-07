@@ -59,7 +59,7 @@ onToggleListService(e) {
               <ListAvtoWork listVisibleWork={this.state.listVisibleWork}/>
             </li></Link>
             <Link to="#"><li>Ціни</li></Link>
-            <Link to="#"><li>Інше</li></Link>
+            <Link to="/different"><li>Інше</li></Link>
             <Link to="/reviews"><li>Відгуки</li></Link>
           </ul>
         </div>

@@ -9,11 +9,12 @@ const BodyCarusel = () =>{
 
         return (
           <div className='carusel'>
-            <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} showArrows={true} interval={8000} >
+            <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true}
+              showArrows={true} interval={3000} >
                 <div>
                     <img src="images/carusel1.jpg" alt=""/>
                     <h1>CTO "AVTOPRO" ремонт автомобілів<br/> в Тернополі</h1>
-                    <p className="legend">ПРО НАС</p>
+                    <Link to="/about"><p className="legend">ПРО НАС</p></Link>
                     <div className='carusel__contacts'>
                       <p>Потрібна допомога? Наберіть нам.</p>
                       <a href="tel:380988360066">+380988360066</a>
@@ -31,7 +32,7 @@ const BodyCarusel = () =>{
                 <div>
                     <img src="images/carusel3.jpg" alt=""/>
                       <h1>Підбір запчастин по низьких <br/> цінах</h1>
-                    <p className="legend" >Детальніше</p>
+                    <a href="tel:380988360066"><p className="legend" >Детальніше</p></a>
                     <div className='carusel__contacts'>
                       <p>Потрібна допомога? Наберіть нам.</p>
                       <a href="tel:380988360066">+380988360066</a>

@@ -21,7 +21,7 @@ const BodyAbout = () => {
               <h3 className="wow fadeIn" >Вітаємо на СТО <span>"AVTOPRO"</span></h3>
             </StyleRoot>
             <div className="about__line"></div>
-            <p>СТО "AVTORPO" була заснована в 2021 році. Вирішення проблем з автомобілями -
+            <p>СТО "AVTOPRO" була заснована в 2021 році. Вирішення проблем з автомобілями -
             це не тільки трудомісткий процес, но і часто розчаровуючий, ремонт обходиться
             дорого і занімає багато часу. Ми стараємось зробити весь процес ремонту максимально:
             "безболісним" для Вас. Клієнтам постійно повідомляється про будь-які змінни під час ремонту.
@@ -29,7 +29,8 @@ const BodyAbout = () => {
           </div>
           <div className="about__picture">
             <img src="/images/about_avtomehanik.jpg" alt=""/>
-            <div className="about__picture_bestchoose">СТО "AVTORPO" кращий вибір для Вашого автомобіля</div>
+            <div className="about__picture_bestchoose">СТО "AVTOPRO" кращий
+              вибір для Вашого автомобіля</div>
           </div>
         </div>
       </div>

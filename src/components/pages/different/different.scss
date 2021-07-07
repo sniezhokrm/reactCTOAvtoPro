@@ -1,0 +1,44 @@
+.different {
+  padding: 40px auto;
+  min-height: 660px;
+  &__text {
+    display: block;
+    color: white;
+    padding: 50px 0px;
+    min-height: 330px;
+    background-color: var(--base-color);
+    h2 {
+      display: block;
+      text-align: center;
+    }
+  }
+  &__desc {
+    display: block;
+    margin-top: 30px;
+    text-indent: 30px;
+    line-height: 2;
+    text-align: justify;
+  }
+  &__equip {
+    min-height: 350px;
+    padding: 50px 0px;
+    h2 {
+      margin-bottom: 26px;
+      display: block;
+      text-align: center;
+    }
+  }
+  &__list {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 35%;
+    }
+    h4 {
+      text-align: center;
+    }
+  }
+}

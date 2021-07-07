@@ -7,7 +7,7 @@ const AboutUs = () => {
     <div className="aboutus">
       <div className='container'>
         <div className='aboutus__block'>
-          <img className="aboutus__img" src='/images/about-us.jpeg' alt=''/>
+          <img  className="aboutus__img" src='/images/about-us.jpeg' alt=''/>
           <div className="aboutus__text">
             <h2>Про CTO AVTO Pro</h2>
             <div className="aboutus__desc">
@@ -19,6 +19,7 @@ const AboutUs = () => {
               якістю ремонту та обслуговування.
             </div>
           </div>
+          <img className="aboutus__img" src='/images/about-us2.jpeg' alt=''/>
         </div>
       </div>
     </div>

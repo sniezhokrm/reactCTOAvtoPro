@@ -1,6 +1,12 @@
 .reviews {
   min-height: 360px;
-  padding: 40px 20px;
+  padding: 30px 20px;
+  &__prevent {
+    height: 20px;
+    color: grey;
+    padding-left: 28%;
+    margin-bottom: 16px;
+  }
 
   &__nameInp {
     width: 300px;
