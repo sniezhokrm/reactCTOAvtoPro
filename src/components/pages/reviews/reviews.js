@@ -46,7 +46,7 @@ onSubmit(e) {
     return {
       name: '',
       text: '',
-      star: 5,
+      star,
       }
     })
 }
@@ -86,7 +86,7 @@ addForm(name, text, star) {
     color: "#007bff",
     activeColor: "yellow",
     a11y: true,
-    isHalf: true,
+    isHalf: false,
     onChange: (newValue) => {this.onChangeStar(newValue)}
   };
   const starPropsRender = {

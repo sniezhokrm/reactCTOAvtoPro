@@ -9,6 +9,7 @@ import BodyServices from '../pages/main/body-services/body-services';
 import BodyCarBrands from '../pages/main/body-car-brands/body-car-brands';
 import Different from '../pages/different/different';
 import Footer from '../footer/footer';
+import Prices from '../pages/prices/prices';
 import {
   BrowserRouter as Router,
   Switch,
@@ -40,11 +41,14 @@ export default class App extends Component {
        <Route path="/about">
         <AboutUs/>
        </Route>
-       <Route path="/reviews">
-         <Reviews/>
+       <Route path="/prices">
+         <Prices/>
        </Route>
        <Route path="/different">
          <Different/>
+       </Route>
+       <Route path="/reviews">
+         <Reviews/>
        </Route>
       </Switch>
      <Footer/>
