@@ -6,7 +6,6 @@ import {Link} from "react-router-dom";
 
 
 const BodyCarusel = () =>{
-
         return (
           <div className='carusel'>
             <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true}
@@ -23,7 +22,7 @@ const BodyCarusel = () =>{
                 <div>
                     <img src="images/carusel2.jpg" alt=""/>
                       <h1>Якіснa діагностика та ремонт <br/> автомбілів</h1>
-                    <p className="legend">Види робіт</p>
+                      <Link to="/services"><p className="legend">Види робіт</p></Link>
                     <div className='carusel__contacts'>
                       <p>Потрібна допомога? Наберіть нам.</p>
                       <a href="tel:380988360066">+380988360066</a>

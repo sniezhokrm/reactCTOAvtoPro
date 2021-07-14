@@ -38,6 +38,9 @@ export default class App extends Component {
         <BodyServices/>
         <BodyCarBrands/>
        </Route>
+       <Route path="/services">
+         <BodyServices/>
+       </Route>
        <Route path="/about">
         <AboutUs/>
        </Route>

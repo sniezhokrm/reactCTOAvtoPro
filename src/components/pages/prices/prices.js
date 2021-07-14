@@ -7,7 +7,7 @@ const Prices = () => {
     <div className="price">
       <div className='container'>
           <div className="price__text">
-          <table border="1" className="price__table" cellspacing="0" cellpadding="0">
+          <table border="2 solid #000066" className="price__table" cellspacing="0" cellpadding="0">
               <tr className="head-title">
                 <td colspan="2" width="576">
                   <p align="center"><strong>Найменування</strong></p>

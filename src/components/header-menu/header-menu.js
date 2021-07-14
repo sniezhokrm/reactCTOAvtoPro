@@ -10,9 +10,12 @@ export default class HeaderMenu extends Component {
         this.onToggleListService = this.onToggleListService.bind(this);
         this.onToggleListWork = this.onToggleListWork.bind(this);
         this.onToggleLeave = this.onToggleLeave.bind(this);
+        this.onToggleMenuActive = this.onToggleMenuActive.bind(this);
+        this.onToggleLeaveMenu = this.onToggleLeaveMenu.bind(this);
         this.state = {
           listVisibleService: false,
-          listVisibleWork: false
+          listVisibleWork: false,
+          menuHamburgerActive: false
         }
     }
 onToggleListService(e) {
@@ -41,14 +44,36 @@ onToggleListService(e) {
       }
       })
       }
+  onToggleMenuActive() {
+    this.setState(({menuActive}) => {
+    return {
+      menuActive: !menuActive
+    }
+    })
+    }
+  onToggleLeaveMenu() {
+    console.log('www');
+    this.setState(({menuActive}) => {
+    return {
+      menuActive: false
+      }
+    })
+  }
   render() {
-
+    const classMenuActive = this.state.menuActive ? "header__menu_active" : "header__menu";
+    console.log(this.state.menuActive);
   return (
-    <div className="menu">
-      <div className="app-menu">
+      <div className="header">
         <div className='container'>
-          <ul className="app-list">
-            <Link to="/"><img  className='logo-img' src="/images/avtopro_logo_head.png" alt=""/></Link>
+          <div className='header__body'>
+          <Link to="/"><img src="/images/avtopro_logo_head.png" alt=""/></Link>
+          <div className='header__hamburger' onClick = {this.onToggleMenuActive}>
+              <div className='header__line'></div>
+              <div className='header__line'></div>
+              <div className='header__line'></div>
+         </div>
+         <nav  className={classMenuActive} onMouseLeave={this.onToggleLeaveMenu}>
+          <ul className="header__list"  >
             <Link to="/about"><li>Про нас</li></Link>
             <Link to="#"><li onMouseLeave={this.onToggleLeave} onClick={this.onToggleListService}>
               Автосервіс
@@ -58,10 +83,11 @@ onToggleListService(e) {
               Кузовні роботи
               <ListAvtoWork listVisibleWork={this.state.listVisibleWork}/>
             </li></Link>
-          <Link to="/prices"><li>Ціни</li></Link>
+            <Link to="/prices"><li>Ціни</li></Link>
             <Link to="/different"><li>Інше</li></Link>
             <Link to="/reviews"><li>Відгуки</li></Link>
           </ul>
+        </nav>
         </div>
       </div>
     </div>

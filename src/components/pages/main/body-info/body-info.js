@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './body-info.scss';
-import {Link} from "react-router-dom";
 
 export default class BodyInfo extends Component {
   constructor(props) {
@@ -47,7 +46,7 @@ export default class BodyInfo extends Component {
                 <h4>{posts[+(id)- 11].textTitle}</h4>
                 <p>{posts[+(id)- 11].text}</p>
               </div>
-              <a href="/"><div className={classNames}>Детальніше</div></a>
+              <a href="tel:+380988360066"><div className={classNames}>Детальніше</div></a>
             </div>
           )
         }

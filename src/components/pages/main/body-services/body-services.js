@@ -43,7 +43,7 @@ export default class BodyServices extends Component {
 return(
     <div className="servises">
       <div className="container">
-        <h3>Наші послуги</h3>
+          <h3>Наші послуги</h3>
         <div className="servises__items">
           {elementsServices}
         </div>
