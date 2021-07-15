@@ -29,10 +29,10 @@ export default class BodyServices extends Component {
     const {idServices} = item;
         if(typeof(item) === 'object'){
           return (
-              <div className="servises__item">
+              <div key= {idServices+10} className="servises__item">
                 <ScrollAnimation animateIn='slideInDown'>
                 <img src={postsServices[+(idServices)- 1].iconServices} alt=""
-                  class="servises__img wow"/> </ScrollAnimation>
+                  className="servises__img wow"/> </ScrollAnimation>
                 <h5>{postsServices[+(idServices)- 1].textServicesTitle}</h5>
                 <p>{postsServices[+(idServices)- 1].textServices}</p>
               </div>

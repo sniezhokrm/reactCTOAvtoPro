@@ -52,10 +52,10 @@ export default class BodyCarBrands extends Component {
     const {idBrands} = item;
         if(typeof(item) === 'object'){
           return (
-              <div className="brands__item">
+              <div key={idBrands+100} className="brands__item">
                 <ScrollAnimation animateIn='pulse'>
                 <img src={postsBrands[+(idBrands)- 1].iconBrands} alt=""
-                  class="brands__img"/>
+                  className="brands__img"/>
               </ScrollAnimation>
               </div>
           )

@@ -8,16 +8,18 @@ export default class ListAvtoWork extends Component {
     const {listVisibleWork} = this.props
     let classNames = 'list-internal';
     if (listVisibleWork) {
-           classNames +=' visible';
+           classNames +=' visible work';
         }
 return (
   <div className={classNames}>
     <div className='list-line'></div>
+    <ul>
     <Link to="/"><li>Ремонт кузова</li></Link>
     <Link to="/"><li>Поліровка кузова</li></Link>
     <Link to="/"><li>Зварювальні роботи</li></Link>
     <Link to="/"><li>Локальна підкраска</li></Link>
     <Link to="/"><li>Заміна елементів кузова</li></Link>
+    </ul>
   </div>
 )}
 };

@@ -39,7 +39,7 @@ export default class BodyInfo extends Component {
          }
         if(typeof(item) === 'object'){
           return (
-            <div onMouseEnter={() =>this.onToggleInfo(id)}
+            <div key={id+1000} onMouseEnter={() =>this.onToggleInfo(id)}
             onMouseLeave={() => this.onToggleInfo(id)} className={classNamesItemInfo} id={id}>
               <img src={posts[+(id)- 11].iconInfo} alt="" className="info__img"/>
               <div className="info__desc">
@@ -53,9 +53,9 @@ export default class BodyInfo extends Component {
     });
 
 return(
-    <div class="info">
-      <div class="container">
-        <div class="info__block">
+    <div className="info">
+      <div className="container">
+        <div className="info__block">
           {elements}
         </div>
       </div>

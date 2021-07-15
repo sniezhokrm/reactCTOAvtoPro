@@ -75,14 +75,15 @@ onToggleListService(e) {
          <nav  className={classMenuActive} onMouseLeave={this.onToggleLeaveMenu}>
           <ul className="header__list"  >
             <Link to="/about"><li>Про нас</li></Link>
-            <Link to="#"><li onMouseLeave={this.onToggleLeave} onClick={this.onToggleListService}>
+            <li onMouseLeave={this.onToggleLeave} onClick={this.onToggleListService}>
               Автосервіс
               <ListAvtoService listVisibleService={this.state.listVisibleService}/>
-            </li></Link>
-            <Link to="#"><li onClick={this.onToggleListWork} onMouseLeave={this.onToggleLeave} >
+
+            </li>
+            <li onClick={this.onToggleListWork} onMouseLeave={this.onToggleLeave} >
               Кузовні роботи
               <ListAvtoWork listVisibleWork={this.state.listVisibleWork}/>
-            </li></Link>
+            </li>
             <Link to="/prices"><li>Ціни</li></Link>
             <Link to="/different"><li>Інше</li></Link>
             <Link to="/reviews"><li>Відгуки</li></Link>

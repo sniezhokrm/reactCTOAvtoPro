@@ -7,9 +7,10 @@ const Prices = () => {
     <div className="price">
       <div className='container'>
           <div className="price__text">
-          <table border="2 solid #000066" className="price__table" cellspacing="0" cellpadding="0">
+          <table border="2 solid #000066" className="price__table" cellSpacing="0" cellPadding="0">
+            <tbody>
               <tr className="head-title">
-                <td colspan="2" width="576">
+                <td colSpan="2" width="576">
                   <p align="center"><strong>Найменування</strong></p>
                 </td>
                 <td>
@@ -17,7 +18,7 @@ const Prices = () => {
                 </td>
               </tr>
               <tr className="head-title">
-                <td colspan="3" width="678">
+                <td colSpan="3" width="678">
                   <h2 align="center"><strong>1.</strong><strong>Діагностика автомобіля</strong></h2>
                 </td>
               </tr>
@@ -77,7 +78,7 @@ const Prices = () => {
                 </td>
               </tr>
               <tr className="head-title">
-                <td colspan="3" width="678">
+                <td colSpan="3" width="678">
                   <h2 align="center"><strong>2.</strong><strong>Технічне обслуговування</strong></h2>
                 </td>
               </tr>
@@ -236,7 +237,7 @@ const Prices = () => {
                 </td>
               </tr>
               <tr className="head-title">
-                <td colspan="3" width="678">
+                <td colSpan="3" width="678">
                   <h2 align="center"><strong>3.</strong> <strong>Ходова частин</strong><strong>а</strong></h2>
                 </td>
               </tr>
@@ -439,7 +440,7 @@ const Prices = () => {
                 </td>
               </tr>
               <tr className="head-title">
-                <td colspan="3" width="678">
+                <td colSpan="3" width="678">
                   <h2 align="center"><strong>4. Рульове керування</strong></h2>
                 </td>
               </tr>
@@ -544,7 +545,7 @@ const Prices = () => {
               </tr>
               <tr className="head-title">
                 <td width="60">&nbsp;</td>
-                <td colspan="2" width="617">
+                <td colSpan="2" width="617">
                   <h2 align="center"><strong>5. Гальмівна система</strong></h2>
                 </td>
               </tr>
@@ -660,7 +661,7 @@ const Prices = () => {
               </tr>
               <tr className="head-title">
                 <td width="60">&nbsp;</td>
-                <td colspan="2" width="617">
+                <td colSpan="2" width="617">
                   <h2 align="center"><strong>6. Двигун</strong></h2>
                 </td>
               </tr>
@@ -864,7 +865,7 @@ const Prices = () => {
               </tr>
               <tr className="head-title">
                 <td width="60">&nbsp;</td>
-                <td colspan="2" width="617">
+                <td colSpan="2" width="617">
                   <h2 align="center"><strong>7.Трансмісія</strong></h2>
                 </td>
               </tr>
@@ -1013,7 +1014,7 @@ const Prices = () => {
               </tr>
               <tr className="head-title">
                 <td width="60">&nbsp;</td>
-                <td colspan="2" width="617">
+                <td colSpan="2" width="617">
                   <h2 align="center"><strong>8.</strong> <strong>Електрообладнання</strong></h2>
                 </td>
               </tr>
@@ -1158,6 +1159,7 @@ const Prices = () => {
                   <p align="center">250</p>
                 </td>
               </tr>
+             </tbody>
             </table>
           </div>
         </div>

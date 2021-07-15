@@ -76,24 +76,24 @@
 
   &__list {
     margin-top: 18px;
-    width: 100%;
     color: black;
     display: flex;
     justify-content: space-between;
 
     li {
       list-style-type: none;
-      font-weight: 600;
+      font-weight: 500;
       margin-left: 30px;
-
-      a {
-        color: var(--bae-color);
-        text-decoration: none;
-
-        &:hover {
-          color: #000;
-        }
+      font-size: 20px;
+      color: #0000ff;
+      cursor: pointer;
+      &:hover {
+        color: #000050;
       }
+    }
+      a {
+        color: var(--base-color);
+        text-decoration: none;
     }
   }
 

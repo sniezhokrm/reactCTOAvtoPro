@@ -7,7 +7,6 @@ import './components/app/adaptation.scss';
 
 
 
-
 ReactDOM.render(
   <React.StrictMode>
     <App />

@@ -9,10 +9,10 @@ export default class Reviews extends Component {
       reviews: [
       {name: 'Роман', id: '21',
         text: "Планове ТО прошов на відмінно, ціни та якість приємно радують",
-      star: "5"},
+      star: 5},
       {name: 'Степан', id: '22',
         text: "Автомобіль посля ремонту двигуна, працює як новий, дякую хлопці )",
-      star: "5"},
+      star: 5},
     ],
     text: '',
     name: '',
@@ -30,7 +30,7 @@ onChange(e) {
 }
 onChangeName(e) {
   this.setState({
-      name: e.target.value
+    name: e.target.value
   })
 }
 onChangeStar(value) {
